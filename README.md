@@ -11,11 +11,6 @@
 
 **Get instant code reviews, language tips, and expert guidance - all powered by AI**
 
-[Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Tech Stack](#-tech-stack) • [Contributing](#-contributing)
-
----
-
-![CodeGuardian Demo](https://via.placeholder.com/800x400/1a1a2e/ffffff?text=CodeGuardian+Dashboard)
 
 </div>
 
@@ -50,13 +45,7 @@ Get expert guidance on:
 - Learn best practices and design patterns
 - Receive personalized tips based on your skill level
 
-### 💾 **History & Analytics**
-- MongoDB-powered review history
-- Track your code improvements over time
-- Save and revisit previous analyses
-- Export reports in multiple formats
 
----
 
 ## 🚀 Quick Start
 
@@ -82,20 +71,8 @@ npm install
 cp .env.example .env
 ```
 
-### Environment Setup
 
-Create a `.env` file in the root directory:
-```env
-# MongoDB Configuration
-MONGODB_URI=your_mongodb_connection_string
 
-# Server Configuration
-PORT=5000
-NODE_ENV=development
-
-# Note: Groq API has been removed from this version
-# Previous versions used Groq API for AI-powered analysis
-```
 
 ### Run the Application
 ```bash
@@ -156,25 +133,6 @@ Visit `http://localhost:3000` in your browser 🎉
 
 ---
 
-## 📸 Screenshots
-
-<div align="center">
-
-### Dashboard
-![Dashboard](https://via.placeholder.com/600x350/0f0f23/00d9ff?text=Interactive+Dashboard)
-
-### Code Review Interface
-![Code Review](https://via.placeholder.com/600x350/1a1a2e/16c79a?text=Real-time+Code+Analysis)
-
-### File Upload
-![File Upload](https://via.placeholder.com/600x350/16213e/f39c12?text=Drag+%26+Drop+Files)
-
-### Language Tips
-![Tips](https://via.placeholder.com/600x350/0f0f23/e74c3c?text=Expert+Programming+Tips)
-
-</div>
-
----
 
 ## 💻 Usage
 
@@ -209,78 +167,15 @@ Supported file types:
 
 ---
 
-## 🔧 Configuration
-
-### MongoDB Setup
-```javascript
-// config/database.js
-const mongoose = require('mongoose');
-
-mongoose.connect(process.env.MONGODB_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
-```
-
-### Tailwind Configuration
-```javascript
-// tailwind.config.js
-module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
-  theme: {
-    extend: {
-      colors: {
-        primary: '#00d9ff',
-        secondary: '#16c79a',
-        dark: '#0f0f23',
-      },
-    },
-  },
-};
-```
-
----
-
 ## ⚠️ Important Notes
 
 ### Groq API Status
-> **Note:** Previous versions of CodeGuardian used the Groq API for AI-powered code analysis. This dependency has been **removed** in the current version. The application now uses alternative AI analysis methods.
+> **Note:** Previous versions of CodeGuardian used the Groq API for AI-powered code analysis. This dependency has been **removed** in the current version.
 
 If you're upgrading from an older version:
 1. Remove any Groq API keys from your `.env` file
 2. Update your dependencies with `npm install`
 3. The core functionality remains unchanged
-
----
-
-## 🤝 Contributing
-
-We welcome contributions! Here's how you can help:
-
-1. **Fork the repository**
-2. **Create a feature branch**
-```bash
-   git checkout -b feature/AmazingFeature
-```
-3. **Commit your changes**
-```bash
-   git commit -m 'Add some AmazingFeature'
-```
-4. **Push to the branch**
-```bash
-   git push origin feature/AmazingFeature
-```
-5. **Open a Pull Request**
-
-### Contribution Guidelines
-- Follow existing code style
-- Write meaningful commit messages
-- Add tests for new features
-- Update documentation as needed
-
-
-
-
 
 
 
@@ -294,7 +189,5 @@ We welcome contributions! Here's how you can help:
 
 
 **Made with ❤️ by Keshav Kumar**
-
-![Footer](https://via.placeholder.com/800x100/1a1a2e/00d9ff?text=CodeGuardian+%7C+Code+Better%2C+Learn+Faster)
 
 </div>
